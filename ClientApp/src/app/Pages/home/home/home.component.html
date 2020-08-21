@@ -1,0 +1,369 @@
+<div class="copy-bottom white boxed">© Archi3D 2017.</div>
+<div class="lang-bottom white boxed">
+  <div class="menu-lang">
+    <!-- <a (click)="translate.use('en')" class="active">Eng</a>
+    <a (click)="translate.use('fr')">Fra</a>
+    <a (click)="translate.use('ar')">Ara</a> -->
+    <a *ngFor="let language of languages" [class.active]="language===selectedLanguage"
+      (click)="onSelectLanguage(language)" role="button">{{language}}</a>
+  </div>
+</div>
+<div class="pagepiling">
+  <div class="pp-scrollable text-white section section-1">
+    <div class="scroll-wrap">
+      <div class="section-bg" [ngStyle]="{ 'background-image': 'url(' + IntroduceSectionImage + ')'}"
+        style="background-size: cover;"></div>
+      <div class="scrollable-content">
+        <div class="vertical-centred">
+          <div class="boxed boxed-inner">
+            <div class="vertical-title hidden-xs hidden-sm">
+              <span>{{'HomePage.IntroduceSection.Introduce' | translate}}</span></div>
+            <div class="boxed">
+              <div class="container">
+                <div class="intro">
+                  <div class="row">
+                    <div class="col-md-8 col-lg-6">
+                      <p class="subtitle-top" [innerHTML]="'HomePage.IntroduceSection.Welcome' | translate"></p>
+                      <h1 class="display-2 text-white"><span class="text-primary">Imagining</span> IS key to more
+                        creative</h1>
+                      <div class="hr-bottom"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pp-scrollable section section-2">
+    <div class="scroll-wrap">
+      <div class="scrollable-content">
+        <div class="vertical-centred">
+          <div class="boxed boxed-inner">
+            <div class="vertical-title text-dark hidden-xs hidden-sm"><span>{{'HomePage.WhatWeDoSection.WhatWeDo' |
+                translate}}</span></div>
+            <div class="boxed">
+              <div class="container">
+                <div class="intro">
+                  <div class="row">
+                    <div class="col-md-5 col-lg-5">
+                      <p class="subtitle-top text-dark">{{'HomePage.WhatWeDoSection.OurSpecialization' |
+                        translate}}</p>
+                      <h2 class="title-uppercase">{{'HomePage.WhatWeDoSection.OurMission' |
+                        translate}}<br> <span class="text-primary">{{'HomePage.WhatWeDoSection.OurMission2' |
+                          translate}}</span>
+                        <div [innerHTML]="'HomePage.WhatWeDoSection.OurMission3' |
+                        translate"></div>
+                      </h2>
+                      <ul class="service-list">
+                        <li><a href="">01.{{'HomePage.WhatWeDoSection.3DExterior' |
+                            translate}}</a></li>
+                        <li><a href="">02.{{'HomePage.WhatWeDoSection.3DInterior' |
+                            translate}}</a></li>
+                        <li><a href="">03.{{'HomePage.WhatWeDoSection.Animation' |
+                            translate}}</a></li>
+                        <li><a href="">04.{{'HomePage.WhatWeDoSection.PlansPhotoshop' |
+                            translate}}</a></li>
+                        <li><a href="">05.{{'HomePage.WhatWeDoSection.DesignPoster' |
+                            translate}}</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2">
+                      <div class="dots-image-2">
+                        <img alt="" class="img-responsive" src="../../../../assets/images/1-470x490.jpg">
+                        <div class="dots"></div>
+                        <div class="experience-info">
+                          <div class="number">{{'HomePage.WhatWeDoSection.Year' |
+                            translate}}</div>
+                          <div class="text" [innerHTML]="'HomePage.WhatWeDoSection.OfExperience' |
+                          translate"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pp-scrollable text-white section section-3">
+    <div class="scroll-wrap">
+      <div class="bg-changer">
+        <div class="section-bg" style="background-image:url(../../../../assets/images/bg/bg2.jpg);"></div>
+        <div class="section-bg" style="background-image:url(../../../../assets/images/bg/bg2-2.jpg);"></div>
+        <div class="section-bg" style="background-image:url(../../../../assets/images/bg/bg2-3.jpg);"></div>
+        <div class="section-bg" style="background-image:url(../../../../assets/images/bg/bg2-4.jpg);"></div>
+        <div class="section-bg" style="background-image:url(../../../../assets/images/bg/bg2-5.jpg);"></div>
+        <div class="section-bg" style="background-image:url(../../../../assets/images/bg/bg2-6.jpg);"></div>
+      </div>
+      <div class="scrollable-content">
+        <div class="vertical-centred">
+          <div class="boxed boxed-inner">
+            <div class="vertical-title hidden-xs hidden-sm"><span>{{'HomePage.OurWorkSection.OurWork' |
+                translate}}</span></div>
+            <div class="boxed">
+              <div class="container">
+                <div class="intro">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="title-uppercase text-white">{{'HomePage.OurWorkSection.LatestProject' |
+                        translate}}</h2>
+                      <div class="row-project-box row">
+                        <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                          <a href="" class="project-box">
+                            <div class="project-box-inner">
+                              <h5>UCAM Minimalist Apartment</h5>
+                              <div class="project-category">House Design</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                          <a href="" class="project-box">
+                            <div class="project-box-inner">
+                              <h5>Scadinavan Living Room</h5>
+                              <div class="project-category">House Design</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                          <a href="" class="project-box">
+                            <div class="project-box-inner">
+                              <h5>Office For Fashion Brand Store</h5>
+                              <div class="project-category">Commercial Design</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                          <a href="" class="project-box">
+                            <div class="project-box-inner">
+                              <h5>Rennovate Toilet</h5>
+                              <div class="project-category">House Design</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                          <a href="" class="project-box">
+                            <div class="project-box-inner">
+                              <h5>Rennovate Toilet</h5>
+                              <div class="project-category">House Design</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                          <a href="" class="project-box">
+                            <div class="project-box-inner">
+                              <h5>Rennovate Toilet</h5>
+                              <div class="project-category">House Design</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <a href="" class="h5 link-arrow text-white">{{'HomePage.OurWorkSection.ViewAllProjects' |
+                        translate}} <i class="icon icon-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pp-scrollable section section-4">
+    <div class="scroll-wrap">
+      <div class="scrollable-content">
+        <div class="vertical-centred">
+          <div class="boxed boxed-inner">
+            <div class="vertical-title text-dark hidden-xs hidden-sm"><span>{{'HomePage.PartnersSection.Partners' |
+                translate}}</span></div>
+            <div class="boxed">
+              <div class="container">
+                <div class="intro overflow-hidden">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="title-uppercase">{{'HomePage.PartnersSection.OurPartners' |
+                        translate}}</h2>
+                      <div class="row row-partners">
+                        <div class="col-partner col-sm-4 col-md-3">
+                          <img alt="" src="../../../../assets/images/partners/-1.png">
+                        </div>
+                        <div class="col-partner col-sm-4 col-md-3">
+                          <img alt="" src="../../../../assets/images/partners/-2.png">
+                        </div>
+                        <div class="col-partner col-sm-4 col-md-3">
+                          <img alt="" src="../../../../assets/images/partners/-3.png">
+                        </div>
+                        <div class="col-partner col-sm-4 col-md-3">
+                          <img alt="" src="../../../../assets/images/partners/-4.png">
+                        </div>
+                        <div class="col-partner col-sm-4 col-md-3">
+                          <img alt="" src="../../../../assets/images/partners/-5.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pp-scrollable text-white section section-5">
+    <div class="scroll-wrap">
+      <div class="section-bg" [ngStyle]="{ 'background-image': 'url(' + testimonialSectionImage + ')'}"></div>
+      <div class="scrollable-content">
+        <div class="vertical-centred">
+          <div class="boxed boxed-inner">
+            <div class="vertical-title hidden-xs hidden-sm"><span>testimonials</span></div>
+            <div class="boxed">
+              <div class="container">
+                <div class="intro">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-5">
+                      <span class="icon-quote ion-quote"></span>
+                      <h2 class="title-uppercase text-white">creative & dedicated is things that Archi3D studio
+                        brings
+                        for your house</h2>
+                    </div>
+                    <div class="col-md-5 col-lg-5  col-md-offset-1 col-lg-offset-2">
+                      <div class="review-carousel owl-carousel">
+                        <div class="review-carousel-item">
+                          <div class="text">
+                            <p>“ If you are seeking an Interior designer that will understand exactly your needs, and
+                              someone who will utilise their creative and technical skills in parity with your taste,
+                              then Suzanne at The Archi3D Studio is perfect.</p>
+                            <p> Thank you so much for all your design and expertise."</p>
+                          </div>
+                          <div class="review-author">
+                            <div class="author-name">David & Elisa</div>
+                            <i>Apartment view lake at Brooklyn</i>
+                          </div>
+                        </div>
+                        <div class="review-carousel-item">
+                          <div class="text">
+                            <p>“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptates officia
+                              molestias fugit ipsum, blanditiis minima voluptatibus sit in laudantium doloribus,
+                              illum,
+                              reiciendis similique distinctio asperiores earum dolore eveniet eius."</p>
+                            <p> Thank you so much for all your design and expertise."</p>
+                          </div>
+                          <div class="review-author">
+                            <div class="author-name">Amanda</div>
+                            <i>Apartment view lake at Brooklyn</i>
+                          </div>
+                        </div>
+                        <div class="review-carousel-item">
+                          <div class="text">
+                            <p>“ If you are seeking an Interior designer that will understand exactly your needs, and
+                              someone who will utilise their creative and technical skills in parity with your taste,
+                              then Suzanne at The Archi3D Studio is perfect.</p>
+                            <p> Thank you so much for all your design and expertise."</p>
+                          </div>
+                          <div class="review-author">
+                            <div class="author-name">John</div>
+                            <i>Apartment view lake at Brooklyn</i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pp-scrollable section section-6">
+    <div class="scroll-wrap">
+      <div class="scrollable-content">
+        <div class="vertical-centred">
+          <div class="boxed boxed-inner">
+            <div class="vertical-title text-dark hidden-xs hidden-sm"><span>{{'HomePage.ContactSection.Contact' |
+                translate}}</span></div>
+            <div class="boxed">
+              <div class="container">
+                <div class="intro overflow-hidden">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="title-uppercase">{{'HomePage.ContactSection.Enjoy' |
+                        translate}}</h2>
+                      <!-- <div id="map" class="map-2"></div> -->
+                      <agm-map [latitude]="latitude" [longitude]="longitude">
+                        <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+                      </agm-map>
+                      <div class="contact-info">
+                        <div class="row-contact-info row">
+                          <div class="col-contact-info col-md-6 col-lg-4">
+                            <div class="row">
+                              <h3 class="col-sm-3 col-md-4">{{'HomePage.ContactSection.WriteUs' |
+                                translate}}</h3>
+                              <div class="col-right col-sm-8 col-md-7 col-sm-offset-1 col-md-offset-1">
+                                <div class="contact-info-row col-sm-6 col-md-12">
+                                  <strong class="text-dark">{{'HomePage.ContactSection.HeadOffice' |
+                                    translate}}</strong><br>
+                                  hello@Archi3D.co
+                                </div>
+                                <div class="contact-info-row col-sm-6 col-md-12 ">
+                                  <strong class="text-dark">{{'HomePage.ContactSection.Support' |
+                                    translate}}</strong><br>
+                                  {{'HomePage.ContactSection.Mail' |
+                                  translate}}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-contact-info col-md-6 col-lg-4">
+                            <div class="row">
+                              <h3 class="col-sm-3 col-md-4">{{'HomePage.ContactSection.CallUs' |
+                                translate}}</h3>
+                              <div class="col-right col-sm-8 col-md-7 col-sm-offset-1 col-md-offset-1">
+                                <div class="contact-info-row col-sm-6 col-md-12">
+                                  <strong class="text-dark">{{'HomePage.ContactSection.HeadOffice' |
+                                    translate}}</strong><br>
+                                  {{'HomePage.ContactSection.PhoneNumber' |
+                                  translate}}
+                                </div>
+                                <div class="contact-info-row col-sm-6 col-md-12 ">
+                                  <strong class="text-dark">{{'HomePage.ContactSection.Support' |
+                                    translate}}</strong><br>
+                                  {{'HomePage.ContactSection.PhoneNumber' |
+                                  translate}}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-contact-info col-md-6 col-lg-4">
+                            <div class="row">
+                              <h3 class="col-sm-3 col-md-4">{{'HomePage.ContactSection.VisitUs' |
+                                translate}}</h3>
+                              <div class="col-right col-sm-8 col-md-7 col-sm-offset-1 col-md-offset-1">
+                                <div class="contact-info-row col-sm-6 col-md-12">
+                                  {{'HomePage.ContactSection.Address' |
+                                  translate}}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

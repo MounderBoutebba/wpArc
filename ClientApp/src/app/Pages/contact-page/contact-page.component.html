@@ -1,0 +1,95 @@
+<!--<main class="page-header-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="title-hr"></div>
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <h1>{{'ContactPage.HeaderTitle' | translate}}</h1>
+      </div>
+    </div>
+  </div>
+</main>-->
+
+<div class="content">
+  <!--<div id="map" class="map"></div>-->
+  <div class="page-inner">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="section-info">
+              <div class="title-hr"></div>
+              <div class="info-title">{{'ContactPage.ContactSection' | translate}}</div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row-contact row">
+              <div class="col-contact col-lg-6">
+                <h3 class="contact-title contact-top" [innerHTML]="'ContactPage.AddressCity' | translate"></h3>
+                <p class="contact-address text-muted" [innerHTML]="'ContactPage.Address' | translate"></p>
+                <p class="contact-row"><strong class="text-dark">{{'ContactPage.Email' | translate}}</strong>
+                  {{'HomePage.ContactSection.Mail'
+                  | translate}}</p>
+                <p class="contact-row"><strong class="text-dark">{{'ContactPage.Skype:' | translate}}</strong>
+                  {{'ContactPage.Skype' | translate}}</p>
+              </div>
+              <div class="col-contact col-lg-6">
+                <p class="contact-top"><strong class="text-muted">{{'ContactPage.Call:' | translate}}</strong></p>
+                <p class="phone-lg text-dark">{{'HomePage.ContactSection.PhoneNumber'
+                  | translate}}</p>
+                <p class="text-muted"><strong class="text-dark">{{'ContactPage.WorkHours' | translate}}</strong><br>
+                  {{'ContactPage.Hours' | translate}}</p>
+                <div class="text-muted"><strong class="text-dark">{{'ContactPage.Follow' | translate}}</strong><br>
+                  <div class="contact-social social-list">
+                    <a href="" class="icon ion-social-twitter"></a>
+                    <a href="" class="icon ion-social-facebook"></a>
+                    <a href="" class="icon ion-social-googleplus"></a>
+                    <a href="" class="icon ion-social-linkedin"></a>
+                    <a href="" class="icon ion-social-dribbble-outline"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-message section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="section-info">
+              <div class="title-hr"></div>
+              <div class="info-title">{{'ContactPage.HelpSection' | translate}}</div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <form class="js-form">
+              <div class="row">
+                <div class="form-group col-sm-6 col-lg-4">
+                  <input class="input-gray" type="text" name="name" required placeholder="Name*">
+                </div>
+                <div class="form-group col-sm-6 col-lg-4">
+                  <input class="input-gray" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group col-sm-12 col-lg-4">
+                  <input class="input-gray" type="text" name="subject" placeholder="Subject (Optinal)">
+                </div>
+                <div class="form-group col-sm-12">
+                  <textarea class="input-gray" name="message" required placeholder="Message*"></textarea>
+                </div>
+                <div class="col-sm-12"><button type="submit" class="btn-upper btn-yellow btn">{{'ContactPage.SendMessageButton'
+                    | translate}}</button></div>
+              </div>
+              <div class="success-message"><i class="fa fa-check text-primary"></i> {{'ContactPage.MessageSentSucced' |
+                translate}}</div>
+              <div class="error-message">{{'ContactPage.MesageSentError' |
+                translate}}</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

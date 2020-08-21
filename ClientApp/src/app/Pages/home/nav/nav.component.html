@@ -1,0 +1,92 @@
+<!-- Content CLick Capture-->
+<div class="click-capture"></div>
+<!-- Sidebar Menu-->
+<div class="menu">
+  <span class="close-menu icon-cross2 right-boxed"></span>
+  <div class="menu-lang right-boxed">
+    <!-- <a (click)="translate.use('en')" class="active" role="button">Eng</a>
+    <a (click)="translate.use('fr')" role="button">Fra</a>
+    <a (click)="translate.use('ar')" role="button">Ara</a> -->
+    <a *ngFor="let language of languages" [class.active]="language===selectedLanguage"
+      (click)="onSelectLanguage(language)" role="button">{{language}}</a>
+  </div>
+  <ul class="menu-list right-boxed">
+    <li class="active">
+      <a [routerLink]="['']">{{'NavBar.Home' | translate}}</a>
+    </li>
+    <li>
+      <a [routerLink]="['/projects']">{{'NavBar.Projets' | translate}}</a>
+    </li>
+    <li>
+      <a href="">{{'NavBar.Services' | translate}}</a>
+      <ul>
+        <li><a href="">{{'HomePage.WhatWeDoSection.3DInterior' |
+            translate}}</a></li>
+        <li><a href="">{{'HomePage.WhatWeDoSection.3DExterior' |
+            translate}}</a></li>
+        <li><a href="">{{'HomePage.WhatWeDoSection.Animation' |
+            translate}} </a></li>
+        <li><a href="">{{'HomePage.WhatWeDoSection.PlansPhotoshop' |
+            translate}} </a></li>
+        <li><a href="">{{'HomePage.WhatWeDoSection.DesignPoster' |
+            translate}} </a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">{{'NavBar.Blog' | translate}}</a>
+    </li>
+    <li>
+      <a [routerLink]="['/contact']">{{'NavBar.Contact' | translate}}</a>
+    </li>
+  </ul>
+  <div class="menu-footer right-boxed">
+    <div class="social-list">
+      <a href="" class="icon ion-social-twitter"></a>
+      <a href="" class="icon ion-social-facebook"></a>
+      <a href="" class="icon ion-social-googleplus"></a>
+      <a href="" class="icon ion-social-linkedin"></a>
+      <a href="" class="icon ion-social-dribbble-outline"></a>
+    </div>
+    <div class="copy" [innerHTML]="'NavBar.CopyRight' | translate"></div>
+  </div>
+</div>
+<!-- Navbar -->
+<header [ngClass]="(route)?'navbar navbar-2 navbar-white boxed':'navbar boxed js-navbar affix-top'">
+  <div class="navbar-bg"></div>
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
+    aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+  <a class="brand" href="">
+    <img class="brand-img" alt="" src="assets/images/brand.png">
+    <img class="brand-img-white" alt="" src="assets/images/brand-white.png">
+    <div class="brand-info">
+      <div class="brand-name">Archi3D</div>
+      <div class="brand-text">architecture</div>
+    </div>
+  </a>
+
+  <div class="social-list hidden-xs">
+    <a href="" class="icon ion-social-twitter"></a>
+    <a href="" class="icon ion-social-facebook"></a>
+    <a href="" class="icon ion-social-googleplus"></a>
+    <a href="" class="icon ion-social-linkedin"></a>
+    <a href="" class="icon ion-social-dribbble-outline"></a>
+  </div>
+  <div *ngIf="!route" class="navbar-spacer hidden-sm hidden-xs"></div>
+  <address class="navbar-address hidden-sm hidden-xs">
+    {{
+    'HomePage.ContactSection.CallUs' |
+    translate
+    }}: <span class="text-dark">
+      {{
+      'HomePage.ContactSection.PhoneNumber' |
+      translate
+      }}
+    </span>
+  </address>
+
+</header>

@@ -1,0 +1,13 @@
+<div class="grid-item js-isotope-item js-grid-item">
+  <div class="project-item item-shadow">
+    <img alt="" class="img-responsive img-size" [src]="project.imageUrl">
+    <div class="project-hover">
+      <div class="project-hover-content">
+        <h3 class="project-title">{{project.title}}</h3>
+        <p class="project-description" [innerHTML]="project.content"></p>
+      </div>
+    </div>
+    <a style="cursor:pointer;" (click)="getDetails()" class="link-arrow">See project <i
+        class="icon ion-ios-arrow-right"></i></a>
+  </div>
+</div>

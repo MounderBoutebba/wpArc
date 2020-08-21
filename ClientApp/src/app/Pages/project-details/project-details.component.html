@@ -1,0 +1,78 @@
+<!-- <div class="wrapper boxed">
+
+
+  <ngu-carousel class="" #myCarousel [inputs]="carouselConfig" [dataSource]="carouselTileItems">
+    <ngu-tile class="nopadding" *nguCarouselDef="let item let index i ">
+      <img src="{{item}}" class="maxwidth">
+    </ngu-tile>
+    <div NguCarouselPrev class="slider-prev icon-chevron-left hidden-xs"></div>
+    <div NguCarouselNext class="slider-next icon-chevron-right hidden-xs"></div>
+
+  </ngu-carousel>
+</div> -->
+
+
+<div class="content">
+  <div class="project-detail">
+    <div class="slider-prev icon-chevron-left hidden-xs"></div>
+    <div class="slider-next icon-chevron-right hidden-xs"></div>
+
+    <div class="rev_slider_wrapper">
+      <div id="rev_slider2" class="rev_slider tp-overflow-hidden fullscreenbanner">
+        <ul>
+
+          <!-- Slide 1 -->
+          <li *ngFor="let img of carouselTileItems" data-transition="slideleft" data-masterspeed="1200"
+            data-fsmasterspeed="1200">
+
+            <!-- Main image-->
+
+            <img src={{project.imageUrl}} alt="" data-bgposition="center center" data-bgfit="cover"
+              data-bgrepeat="no-repeat" class="rev-slidebg">
+
+            <!-- Layer 1 -->
+
+            <div class="tp-caption tp-shape tp-shapewrapper " data-x="['left']" data-hoffset="['0']" data-y="['top']"
+              data-voffset="['50','50','40','40']" data-width="528" data-minwidth="528" data-whitespace="normal"
+              data-type="shape" data-responsive_offset="on"
+              data-frames='[{"from":"opacity:0;z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":400,"to":"opacity:0;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+              <div class="project-detail-info">
+                <div class="project-detail-control"><span class="hide-info">hide information</span><span
+                    class="show-info">show
+                    information</span></div>
+                <div class="project-detail-content">
+                  <h3 class="project-detail-title">{{project.title}}</h3>
+                  <p class="project-detail-text" [innerHTML]="project.content"></p>
+                  <ul class="project-detail-list text-dark">
+                    <li>
+                      <span class="left">Clients:</span>
+                      <span class="right">{{project.client}}</span>
+                    </li>
+                    <li>
+                      <span class="left">Completion:</span>
+                      <span class="right">{{project.completion}}</span>
+                    </li>
+
+                  </ul>
+                  <div class="project-detail-meta">
+                    <span class="left text-dark hidden-xs pull-sm-left">Share:</span>
+                    <div class="social-list pull-sm-right">
+                      <a href="" class="icon ion-social-twitter"></a>
+                      <a href="" class="icon ion-social-facebook"></a>
+                      <a href="" class="icon ion-social-linkedin"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

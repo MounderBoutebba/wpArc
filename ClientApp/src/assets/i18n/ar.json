@@ -1,0 +1,84 @@
+﻿{
+  "HomePage": {
+    "IntroduceSection": {
+      "Introduce": "Introduce",
+      "Welcome": "مرحبا بكم في <br>Archi3D Interior Studio",
+      "Archi3D": "Archi3D Interior Studio"
+    },
+    "WhatWeDoSection": {
+      "WhatWeDo": "WHAT WE DO",
+      "OurSpecialization": "تخصصنا",
+      "OurMission": "مهمتنا هي",
+      "OurMission2": "تصميم وتطوير",
+      "OurMission3": "أفضل الداخليات<br>و حولها",
+      "3DInterior": " Rendu 3D intérieur",
+      "3DExterior": " Rendu 3D exterieur",
+      "Animation": " Animation exterieur et intérieur",
+      "PlansPhotoshop": " Traitement des plans photoshop coupes et façades",
+      "DesignPoster": " Design poster et autres",
+      "Year": "24",
+      "OfExperience": "سنة<br>من الخبرة<br>و العمل"
+    },
+    "OurWorkSection": {
+      "OurWork": "our works",
+      "LatestProject": "latest projects",
+      "ViewAllProjects": "view all projects"
+    },
+    "PartnersSection": {
+      "Partners": "Partners",
+      "OurPartners": "our partners"
+    },
+    "ContactSection": {
+      "Contact": "contact",
+      "Enjoy": "enjoy coffee with us",
+      "WriteUs": "Write us",
+      "HeadOffice": "head office",
+      "Support": "support",
+      "CallUs": "call us",
+      "VisitUs": "Visit us",
+      "Address": "69 Queen St, Melbourne Australia",
+      "PhoneNumber": "(0043) 568 456 902",
+      "Mail": "info@Archi3D.co"
+    }
+  },
+  "NavBar": {
+    "Home": "Home",
+    "Projets": "Projets",
+    "Services": "Services",
+    "Blog": "Blog",
+    "Contact": "Contact",
+    "CopyRight": "© Archi3D 2017. All Rights Reseverd<br> Design by LoganCee"
+  },
+  "ContactPage": {
+    "HeaderTitle": "Enjoy Coffee With Us",
+    "ContactSection": "Keep in touch",
+    "AddressCity": "Melbourne, <span>Australia</span>",
+    "Address": "<strong>269 King Str, 05th Floor, Utral Hosue Building, Melbourne, VIC 3000, Australia.</strong>",
+    "Email": "Email:",
+    "Skype:": "Skype:",
+    "Skype": "Archi3D.arc",
+    "Call:": "Call directly:",
+    "WorkHours": "Work Hours",
+    "Hours": "Monday - Friday : 08h00 - 17h30 Saturday: 08h00 - 12h00, Sunday off work",
+    "Follow": "Follow us",
+    "HelpSection": "You need help",
+    "SendMessageButton": "Send Message",
+    "MessageSentSucced": "Thank you!. Your message is successfully sent...",
+    "MesageSentError": "We're sorry, but something went wrong",
+    "PlaceholderName": "Name*",
+    "PlaceholderEmail": "Email",
+    "PlaceholderSubject": "Subject (Optinal)",
+    "PlaceholderMessage": "Message*"
+  },
+  "ProjectListingPage": {
+    "FilterTags": {
+      "All": "Tous",
+      "Exterior": "Extérieur",
+      "Interior": "Intérieur",
+      "Animation": "Animation",
+      "Treatment": "Traitement",
+      "More": "Autres"
+    },
+    "TextHeader": "Architecture Is A Visual Art And The Building Speak For Themeselves"
+  }
+}

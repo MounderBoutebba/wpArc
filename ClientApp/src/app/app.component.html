@@ -1,0 +1,8 @@
+<div class="animsition">
+  <div [ngClass]="(!route)?'wrapper boxed':''">
+    <app-nav></app-nav>
+    <router-outlet></router-outlet>
+    <app-footer *ngIf="!route"></app-footer>
+    <!-- <app-home></app-home> -->
+  </div>
+</div>
